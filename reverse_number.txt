@@ -1,0 +1,33 @@
+reverse a number (approach. thinking)
+
+Let's take example
+problem:1029 
+solution: 9201
+
+This can be re-written as:
+
+Problem:
+1000*1 + 100*0 + 10*2 + 1*9 
+
+Solution:
+1*1 + 10*0 + 100*2 + 1000*9
+
+What is the change? 
+1000 in problem became 1 in solution
+100 in problem became 10 in solution
+10 in problem became 100 in solution
+1 in problem became 1000 in solution
+
+What is common in problem and solution 
+product = 1000
+
+What does this mean
+1000/problem = solution
+
+How will we solve this ? 
+elem = problem%10
+solution = 10*elem + solution 
+
+
+
+
